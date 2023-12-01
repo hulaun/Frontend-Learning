@@ -1,0 +1,97 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: hsl(234, 29%, 20%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+p{
+  font-size: 0.875rem;
+}
+h1{
+  font-weight: 700;
+}
+
+#sign-up{
+}
+#thanks{
+  display: none;
+}
+#sign-up.mycard{
+  background-color: hsl(0, 0%, 100%);
+  max-width: 50rem;
+  border-radius: 1.5rem;
+}
+.register ul{
+  list-style-type:none;
+  padding: 0;
+}
+.register ul li{
+  padding-left: 2rem;
+  background:  url(../images/icon-success.svg) no-repeat left top;
+  background-size: 20px 20px;
+}
+
+label{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+label b:nth-child(2){
+  color: hsl(4, 100%, 67%);
+}
+#email{
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.invalid,
+.invalid:focus{
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 67%, 0.2);
+  color: hsl(4, 100%, 67%);
+}
+.mybutton{
+  margin-top: 1.5rem;
+  width:100%;
+  background-color: hsl(235, 18%, 26%);
+  border-radius: 0.25rem;
+  border: none;
+  color:white;
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+.mybutton:hover{
+  background-color: hsl(357.8,100%,67.84%);
+}
+
+#thanks.mycard{
+  background-color: hsl(0, 0%, 100%);
+  max-width: 25rem;
+  border-radius: 1.5rem;
+  aspect-ratio: 1/1;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+.img-mob{
+  display: none;
+}
+@media (max-width:575px){
+  .mycard{
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+  }
+  .register-img{
+    grid-row-start: 1;
+    padding: 0;
+  }
+  .img-desc{
+    display: none;
+  }
+  .img-mob{
+    width: 100%;
+    display:block;
+  }
+}
+
